@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Exo", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #fd5b4f #dddddd00;
+}
+
+html {
+  font-size: 16px;
+  @media (width <= 768px) {
+    font-size: 14px;
+  }
+  @media (width <= 425px) {
+    font-size: 12px;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(315deg, #faaca8 10%, #ddd6f3 90%);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fd5b4f;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
