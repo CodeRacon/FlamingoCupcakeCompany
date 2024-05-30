@@ -3,7 +3,7 @@
   margin: 0;
   font-family: "Exo", sans-serif;
   scrollbar-width: thin;
-  scrollbar-color: #fd5b4f #dddddd00;
+  scrollbar-color: #f06193 #dddddd00;
 }
 
 html {
@@ -18,8 +18,8 @@ html {
 
 body {
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(315deg, #faaca8 10%, #ddd6f3 90%);
+  height: 100%;
+  background-color: #fabcae;
 }
 
 ::-webkit-scrollbar {
@@ -28,11 +28,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #fd5b4f;
+  background-color: #f06193;
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: unset;
   border: 1px solid transparent;
 }
