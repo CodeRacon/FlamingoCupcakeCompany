@@ -9,76 +9,133 @@ import { Component } from '@angular/core';
   styleUrl: './cup-cake-list.component.scss',
 })
 export class CupCakeListComponent {
-  howItWorks = 'fine';
-
   cupcakeList = [
     {
-      name: 'Apple',
-      img: 'apple_cupcake.png',
+      name: 'Fudgey Finchy',
+      img: 'finch_cupcake.png',
       description:
-        'Apple cupcakes are a low-calorie treat due to their high water content and contain only traces of fat and protein. They are rich in fiber (about two percent) and carbohydrates (about eleven percent). Apples in these cupcakes provide many vitamins and minerals, making them a great source of Vitamin C.',
-      genus: 'Pome fruits within the rose family',
-      stars: 2.3,
+        "Why put a bird on top of a Cupcake? Because we can! Zebra Finchs are known to be a bit chatty. But you won't... with a mouthfull.",
+      taste:
+        'Really good, indeed! Stracchiatella, caramell, apricot-jam inside.',
+      stars: 4.5,
       reviews: [
-        { name: 'Kevin W.', text: 'Tasty' },
-        { name: 'Arne P.', text: 'Not my favorite' },
+        { name: 'Paul B.', text: 'Made me chatty...about how good it is!' },
+        { name: 'Ric J.', text: 'Cant tell...it flew off the cake!' },
       ],
     },
     {
-      name: 'Banana',
-      img: 'banana_cupcake.png',
+      name: 'Forrest Gulp',
+      img: 'forrest_cupcake.png',
       description:
-        "Banana cupcakes feature creamy, starchy banana fruit that can be up to 30 cm long. The ripe banana's thick, yellow skin is easy to peel off, making it perfect for a moist and flavorful cupcake base.",
-      genus: 'Banana family (Musaceae) within monocotyledonous plants',
+        'Ever wondered what the average taste of a forrest might be? Awfull. Not to recommend. Instead, try this one.',
+      taste: 'Cake with an earthy texture, nutty taste, pine needle cream.',
       stars: 3.8,
       reviews: [
-        { name: 'Waldemar W.', text: 'Great for a fruit salad theme' },
-        { name: 'Olaf P.', text: 'Not bad' },
+        {
+          name: 'Steffi P.',
+          text: "It's like your tounge goes for a hike in the woods.",
+        },
+        {
+          name: 'Holger M.',
+          text: 'A bit scary...should try it again in daylight.',
+        },
       ],
     },
     {
-      name: 'Sour Cherry',
-      img: 'cherry_cupcake.png',
-      description:
-        'Sour cherry cupcakes have a tart flavor with bright to dark red cherries. The 15 to 20 mm diameter cherries are almost spherical, smooth, and frost-free, adding a unique tang to the cupcakes.',
-      genus: 'Plant species from the rose family (Rosaceae)',
+      name: 'Irrelephant',
+      img: 'irrelephant_cupcake.png',
+      description: 'Try not to think of a blue elephant! Got it?  ',
+      taste:
+        "We couldn't care less of the elephant, so we focused on the cupcake. Blue Curacao, blueberries, buttery cream, and a hint of vanilla.",
       stars: 3.7,
-      reviews: [{ name: 'Horst', text: 'Definitely not sweet' }],
+      reviews: [{ name: 'Helge s.', text: "It's a blue elephant!" }],
     },
     {
-      name: 'Strawberry',
-      img: 'strawberry_cupcake.png',
+      name: 'Melon-cholia',
+      img: 'melon_cupcake.png',
       description:
-        'Strawberry cupcakes are perfect for making jam-filled delights. Growing your strawberries might be a bit tedious, but the effort is worth it as they taste much better than store-bought ones.',
-      genus: 'Plant species from the rose family (Rosaceae)',
+        'This one certainly lives up to its promise, certainly. Tastes of melon, melon and also melon. Melon lovers in particular will love it!',
+      taste: 'Quite melon-ish...with a hint of melon.',
       stars: 4.3,
       reviews: [
-        { name: 'Mandy K.', text: 'Perfect for cakes' },
-        { name: 'Olaf P.', text: 'Also a good choice' },
+        {
+          name: 'Mandy K.',
+          text: 'Came for the melon, left with a cake na da smile',
+        },
+        {
+          name: 'Olaf P.',
+          text: 'Such a variety of melon-ish flavours...damn!',
+        },
       ],
     },
     {
-      name: 'Lemon',
-      img: 'lemon_cupcake.png',
+      name: 'Mount Fudgey',
+      img: 'mountain_cupcake.png',
       description:
-        'Lemon cupcakes are made with lemons from evergreen trees that produce elongated, oval fruits with yellow or yellow-green skin. The juicy, sour flesh contains about 3.5–8% citric acid and significant amounts of Vitamin C.',
-      genus: 'Plant species from the rue family',
+        'As if Bob Ross had painted this little masterpiece with colored sugar icing. Maybe he did. Who knows for sure. At least he was always in a good mood.',
+
+      taste:
+        'Fresh and icey on top, piney in the middle, soft and fudgey at the bottom.',
       stars: 1.3,
       reviews: [
-        { name: 'Horst', text: 'Definitely not sweet either' },
-        { name: 'Paul K.', text: 'Not perfect for cakes' },
+        { name: 'Reinhold M.', text: 'I had a Yeti on my one. Reclaimed!' },
+        {
+          name: 'Ruben O.',
+          text: 'Carefull with the first bite, very frosty!',
+        },
       ],
     },
     {
-      name: 'Orange',
-      img: 'orange_cupcake.png',
+      name: 'Cake Noir',
+      img: 'noir_cupcake.png',
       description:
-        "Orange cupcakes are made with oranges whose inner peel is white and inedible, requiring peeling before use. Oranges can be turned into various products, with their juices sold as orange juice. The orange peel's scent is used in perfumes, and dried orange peel is used in teas.",
-      genus: 'Plant species from the rue family',
+        'A classic. Simple, honest, tasty. No frills, just the essentials that make a good...no, VERY good cupcake. ',
+      taste: 'Plant species from the rue family',
       stars: 4.7,
       reviews: [
-        { name: 'Kevin W.', text: 'Usually pretty good!' },
-        { name: 'Oliver J.', text: 'Absolute favorite for breakfast' },
+        { name: 'Kevin W.', text: 'Pretty good! I mean: pretty and good!' },
+        {
+          name: 'Nadine. L.',
+          text: "When the In-laws are coming, it's the absolute favorite to keep them calm! ",
+        },
+      ],
+    },
+    {
+      name: 'Colourful Coincident',
+      img: 'color_cupcake.png',
+      description:
+        "To be honest, that's what you get when you tell the apprentice: Use your imagination, you can use whatever ingredients you find here. And boy, he did!",
+
+      taste: 'Literally everything! All at at once! No refunds, by the way.',
+      stars: 4.7,
+      reviews: [
+        {
+          name: 'Robert D.',
+          text: "Freakin'awesome! My mouth feels still numb.",
+        },
+        {
+          name: 'Klaus N.',
+          text: 'Each cupcake is a unique experience...depending on which apprentice is currently on shift...I guess.',
+        },
+      ],
+    },
+    {
+      name: 'Little Princess',
+      img: 'princess_cupcake.png',
+      description:
+        "Today I am the princess! Of course, no question. Here's the right, regal cupcake for the occasion. Just as befits the high-born highness that you are... as our customer.",
+
+      taste: 'Literally everything! All at at once! No refunds, by the way.',
+      stars: 4.7,
+      reviews: [
+        {
+          name: 'Esmeralda M.',
+          text: 'Spoonable nobility, indeed.',
+        },
+        {
+          name: 'Nina H.',
+          text: 'Make way for the comment! Here it comes: Well done, fellow creator of baked goods. ',
+        },
       ],
     },
   ];
