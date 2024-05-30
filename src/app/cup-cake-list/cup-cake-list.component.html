@@ -1,3 +1,39 @@
-<p>cup-cake-list works {{ cupcakeList[1].name }}!</p>
+<div class="cupcakeList_content">
+  @for(cupcake of cupcakeList; track cupcake.name){
+  <section class="single-cupcake-box">
+    <div>
+      <img src="./assets/img/{{ cupcake.img }}" alt="" srcset="" />
+    </div>
 
-<p></p>
+    <div>
+      <h2>{{ cupcake.name }}</h2>
+      <div>
+        <p><b>Rating:</b></p>
+
+        <div>
+          <img src="./assets/img/stars/star.svg" alt="" srcset="" />
+          <img src="./assets/img/stars/star.svg" alt="" srcset="" />
+          <img src="./assets/img/stars/star.svg" alt="" srcset="" />
+          <img src="./assets/img/stars/star-half.svg" alt="" srcset="" />
+          <img src="./assets/img/stars/star-empty.svg" alt="" srcset="" />
+          <p>({{ cupcake.stars }})</p>
+        </div>
+      </div>
+
+      <div><b>Description:</b><br />{{ cupcake.description }}</div>
+      <div><b>Taste:</b><br />{{ cupcake.taste }}</div>
+
+      <div>
+        <div>
+          <!-- reviews here! -->
+        </div>
+        <div>
+          <input type="text" /><button>
+            <img src="./assets/img/arrow-35-32.png" alt="" srcset="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  }
+</div>
