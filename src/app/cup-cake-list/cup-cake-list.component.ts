@@ -11,13 +11,33 @@ import { Component } from '@angular/core';
 export class CupCakeListComponent {
   cupcakeList = [
     {
+      name: 'Flamin-gooo',
+      img: 'flamingo_cupcake.png',
+      description:
+        "Our bestseller and signature dish. Comes with our little pink friend on top. Yes, we like to put strange things on our cakes ...and that's how it all started.",
+
+      taste:
+        "The batter contains a delicious raspberry goo surprise. The bird itself tastes very pink-ish. Just try it. It's our best dish for a reason!",
+      stars: 4.9,
+      reviews: [
+        {
+          name: 'Pauline P.',
+          text: "Oh. My. Gosh. I love this cupcake. I'm gonna decrease the Flamin-gooo population drastically. Sorry birdy.",
+        },
+        {
+          name: 'Ferris B.',
+          text: "Don't know why, but this birds look combines psycho and charming in one pink something! Tasted really good, by the way. ",
+        },
+      ],
+    },
+    {
       name: 'Fudgey Finchy',
       img: 'finch_cupcake.png',
       description:
         "Why put a bird on top of a Cupcake? Because we can! Zebra Finchs are known to be a bit chatty. But you won't... with a mouthfull.",
       taste:
         'Really good, indeed! Stracchiatella, caramell, apricot-jam inside.',
-      stars: 4.5,
+      stars: 3.9,
       reviews: [
         { name: 'Paul B.', text: 'Made me chatty...about how good it is!' },
         { name: 'Ric J.', text: 'Cant tell...it flew off the cake!' },
@@ -28,8 +48,9 @@ export class CupCakeListComponent {
       img: 'forrest_cupcake.png',
       description:
         'Ever wondered what the average taste of a forrest might be? Awfull. Not to recommend. Instead, try this one.',
-      taste: 'Cake with an earthy texture, nutty taste, pine needle cream.',
-      stars: 3.8,
+      taste:
+        'Down to earth brownie-cake with an earthy texture, nutty taste and pine-needle cream topping.',
+      stars: 4.8,
       reviews: [
         {
           name: 'Steffi P.',
@@ -47,20 +68,20 @@ export class CupCakeListComponent {
       description: 'Try not to think of a blue elephant! Got it?  ',
       taste:
         "We couldn't care less of the elephant, so we focused on the cupcake. Blue Curacao, blueberries, buttery cream, and a hint of vanilla.",
-      stars: 3.7,
+      stars: 4.3,
       reviews: [{ name: 'Helge s.', text: "It's a blue elephant!" }],
     },
     {
       name: 'Melon-cholia',
       img: 'melon_cupcake.png',
       description:
-        'This one certainly lives up to its promise, certainly. Tastes of melon, melon and also melon. Melon lovers in particular will love it!',
+        'This one certainly lives up to its promise. Tastes of melon, melon and also melon. Melon lovers in particular will love it!',
       taste: 'Quite melon-ish...with a hint of melon.',
-      stars: 4.3,
+      stars: 2.2,
       reviews: [
         {
           name: 'Mandy K.',
-          text: 'Came for the melon, left with a cake na da smile',
+          text: 'Came for the melon, left with a cake and a smile',
         },
         {
           name: 'Olaf P.',
@@ -76,7 +97,7 @@ export class CupCakeListComponent {
 
       taste:
         'Fresh and icey on top, piney in the middle, soft and fudgey at the bottom.',
-      stars: 1.3,
+      stars: 3.1,
       reviews: [
         { name: 'Reinhold M.', text: 'I had a Yeti on my one. Reclaimed!' },
         {
@@ -91,7 +112,7 @@ export class CupCakeListComponent {
       description:
         'A classic. Simple, honest, tasty. No frills, just the essentials that make a good...no, VERY good cupcake. ',
       taste: 'Plant species from the rue family',
-      stars: 4.7,
+      stars: 4.2,
       reviews: [
         { name: 'Kevin W.', text: 'Pretty good! I mean: pretty and good!' },
         {
@@ -104,10 +125,10 @@ export class CupCakeListComponent {
       name: 'Colourful Coincident',
       img: 'color_cupcake.png',
       description:
-        "To be honest, that's what you get when you tell the apprentice: Use your imagination, you can use whatever ingredients you find here. And boy, he did!",
+        'To be honest, that\'s what you get when you tell your apprentice: "Trevor, let your imagination guide you! Use whatever ingredients you find here". And boy, he did!',
 
       taste: 'Literally everything! All at at once! No refunds, by the way.',
-      stars: 4.7,
+      stars: 2.3,
       reviews: [
         {
           name: 'Robert D.',
@@ -123,10 +144,11 @@ export class CupCakeListComponent {
       name: 'Little Princess',
       img: 'princess_cupcake.png',
       description:
-        "Today I am the princess! Of course, no question. Here's the right, regal cupcake for the occasion. Just as befits the high-born highness that you are... as our customer.",
+        "Today I am the princess! Of course you are, no question. Here's the right, regal cupcake for the occasion. Just as befits the high-born highness that you are... as our customer.",
 
-      taste: 'Literally everything! All at at once! No refunds, by the way.',
-      stars: 4.7,
+      taste:
+        'Sublime flavour of strawberry, dragon fruit, adorned with sheer royalty, bedded on a pouch of soft cake.',
+      stars: 3.6,
       reviews: [
         {
           name: 'Esmeralda M.',
