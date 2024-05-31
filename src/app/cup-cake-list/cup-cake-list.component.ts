@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './cup-cake-list.component.scss',
 })
 export class CupCakeListComponent {
+  ratingColor = '#5727b1';
+
   cupcakeList = [
     {
       name: 'Flamin-gooo',
@@ -111,7 +113,8 @@ export class CupCakeListComponent {
       img: 'noir_cupcake.png',
       description:
         'A classic. Simple, honest, tasty. No frills, just the essentials that make a good...no, VERY good cupcake. ',
-      taste: 'Plant species from the rue family',
+      taste:
+        "Black and white, very dark, almost bitter chocolate, sweet, frothy cream with a hint of mint. That's it.",
       stars: 4.2,
       reviews: [
         { name: 'Kevin W.', text: 'Pretty good! I mean: pretty and good!' },
