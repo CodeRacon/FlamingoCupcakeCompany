@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-single-cupcake',
@@ -28,4 +28,10 @@ export class SingleCupcakeComponent {
       },
     ],
   };
+
+  @Output() cupcakeName = new EventEmitter<string>();
+
+  emitCupcakeName() {
+    this.cupcakeName.emit(this.cupcake.name);
+  }
 }
