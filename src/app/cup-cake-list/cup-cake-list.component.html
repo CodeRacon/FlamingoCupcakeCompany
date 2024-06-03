@@ -1,61 +1,11 @@
 <div class="cupcakeList_content">
-  @for(item of cupcakeList; track item.name; let index = $index){
-  <section class="single-cupcake-box">
-    <div class="img-box">
-      <img src="./assets/img/{{ item.img }}" alt="" srcset="" />
-    </div>
+  @for(singleCupcake of cupcakeList; track singleCupcake.name; let index =
+  $index){
 
-    <div class="info-box">
-      <h2>
-        <app-single-cupcake [cupcakeDish]="index + 1"></app-single-cupcake>
-        {{ item.name }}
-      </h2>
-      <div class="rating">
-        <p><b>Rating:</b></p>
+  <app-single-cupcake
+    (click)="numLog(index)"
+    [cupcake]="singleCupcake"
+  ></app-single-cupcake>
 
-        <div>
-          @for (count of [1,2,3,4,5]; track cupcakeList) { @if (item.stars >=
-          count) {
-
-          <img src="./assets/img/icons/star.svg" alt="" srcset="" />
-          } @else if (item.stars >= count - 0.5) {
-          <img src="./assets/img/icons/star-half.svg" alt="" srcset="" />
-
-          } @else {
-          <img src="./assets/img/icons/star-empty.svg" alt="" srcset="" />
-
-          } }
-
-          <p [ngStyle]="{ color: ratingColor }">({{ item.stars }})</p>
-        </div>
-      </div>
-
-      <div class="description">
-        <b>Attempt of explanation:</b><br />{{ item.description }}
-      </div>
-      <div class="taste"><b>What to expect:</b><br />{{ item.taste }}</div>
-
-      <div [ngClass]="'comment-bg'" class="comment-box">
-        <div>
-          @for (review of item.reviews; track review) {
-          <div class="author">
-            {{ review.name }}
-          </div>
-          <div class="comment">
-            {{ review.text }}
-          </div>
-          <br />
-          } @empty {
-          <em>No comments yet!</em>
-          }
-        </div>
-        <div class="comment-input">
-          <input type="text" /><button>
-            <img src="./assets/img/icons/cake-icon.png" alt="" srcset="" />
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
   }
 </div>

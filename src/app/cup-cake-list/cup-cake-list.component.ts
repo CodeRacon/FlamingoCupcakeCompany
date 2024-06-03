@@ -165,4 +165,8 @@ export class CupCakeListComponent {
       ],
     },
   ];
+
+  numLog(index: number) {
+    console.log(index);
+  }
 }

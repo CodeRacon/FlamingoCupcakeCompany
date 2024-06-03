@@ -1,1 +1,56 @@
-{{ cupcakeDish }}
+<section class="single-cupcake-box">
+  <div class="img-box">
+    <img src="./assets/img/{{ cupcake.img }}" alt="" srcset="" />
+  </div>
+
+  <div class="info-box">
+    <h2>
+      {{ cupcake.name }}
+    </h2>
+    <div class="rating">
+      <p><b>Rating:</b></p>
+
+      <div>
+        @for (count of [1,2,3,4,5]; track cupcake) { @if (cupcake.stars >=
+        count) {
+
+        <img src="./assets/img/icons/star.svg" alt="" srcset="" />
+        } @else if (cupcake.stars >= count - 0.5) {
+        <img src="./assets/img/icons/star-half.svg" alt="" srcset="" />
+
+        } @else {
+        <img src="./assets/img/icons/star-empty.svg" alt="" srcset="" />
+
+        } }
+
+        <p>({{ cupcake.stars }})</p>
+      </div>
+    </div>
+
+    <div class="description">
+      <b>Attempt of explanation:</b><br />{{ cupcake.description }}
+    </div>
+    <div class="taste"><b>What to expect:</b><br />{{ cupcake.taste }}</div>
+
+    <div class="comment-box">
+      <div>
+        @for (review of cupcake.reviews; track review) {
+        <div class="author">
+          {{ review.name }}
+        </div>
+        <div class="comment">
+          {{ review.text }}
+        </div>
+        <br />
+        } @empty {
+        <em>No comments yet!</em>
+        }
+      </div>
+      <div class="comment-input">
+        <input type="text" /><button>
+          <img src="./assets/img/icons/cake-icon.png" alt="" srcset="" />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
