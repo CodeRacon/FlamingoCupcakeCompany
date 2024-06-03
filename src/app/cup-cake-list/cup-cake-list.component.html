@@ -1,6 +1,6 @@
 <div class="cupcakeList_content">
-  @for(singleCupcake of cupcakeList; track singleCupcake.name; let index =
-  $index){
+  @for(singleCupcake of cupcakeListData.cupcakeList; track singleCupcake.name;
+  let index = $index){
 
   <app-single-cupcake
     (cupcakeName)="addComment($event, index)"
