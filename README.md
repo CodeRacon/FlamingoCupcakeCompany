@@ -19,6 +19,6 @@ A good start with Angular and a fun little project to dive into Angular and expl
 
 ## impression
 
-<img src="screenshot-fcc.png"  width="600">
+<img src="./src/screenshot-fcc.png"  width="600">
 
 As allways: Happy coding!
