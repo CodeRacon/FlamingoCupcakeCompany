@@ -36,5 +36,6 @@ export class SingleCupcakeComponent {
 
   sendInputData() {
     this.cupcakeName.emit(this.inputData);
+    this.inputData = '';
   }
 }
