@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SingleCupcakeComponent } from './single-cupcake/single-cupcake.component';
 
 @Component({
   selector: 'app-cup-cake-list',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SingleCupcakeComponent],
   templateUrl: './cup-cake-list.component.html',
   styleUrl: './cup-cake-list.component.scss',
 })

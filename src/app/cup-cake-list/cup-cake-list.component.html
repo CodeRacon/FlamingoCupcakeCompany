@@ -1,12 +1,15 @@
 <div class="cupcakeList_content">
-  @for(item of cupcakeList; track item.name){
+  @for(item of cupcakeList; track item.name; let index = $index){
   <section class="single-cupcake-box">
     <div class="img-box">
       <img src="./assets/img/{{ item.img }}" alt="" srcset="" />
     </div>
 
     <div class="info-box">
-      <h2>{{ item.name }}</h2>
+      <h2>
+        <app-single-cupcake [cupcakeDish]="index + 1"></app-single-cupcake>
+        {{ item.name }}
+      </h2>
       <div class="rating">
         <p><b>Rating:</b></p>
 
@@ -32,7 +35,7 @@
       </div>
       <div class="taste"><b>What to expect:</b><br />{{ item.taste }}</div>
 
-      <div class="comment-box">
+      <div [ngClass]="'comment-bg'" class="comment-box">
         <div>
           @for (review of item.reviews; track review) {
           <div class="author">
