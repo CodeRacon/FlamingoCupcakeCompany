@@ -19,6 +19,7 @@ A good start with Angular and a fun little project to dive into Angular and expl
 
 ## impression
 
-<img src="screenshot-fcc.png"  width="600">
+![screenshot-fcc](https://github.com/CodeRacon/FlamingoCupcakeCompany/assets/146719762/e7a81b35-c49b-4544-a6b1-abc5481fa346)
+
 
 As allways: Happy coding!
