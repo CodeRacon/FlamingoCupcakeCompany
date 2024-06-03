@@ -7,7 +7,7 @@
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
     width: 200px;
-    height: 500px;
+    height: 540px;
     background-image: linear-gradient(315deg, #7950f2 39%, #f783ac 100%);
     box-shadow: 5.7px 5.7px 2.2px rgba(0, 0, 0, 0.032),
       11.5px 11.5px 5.3px rgba(0, 0, 0, 0.04),
@@ -27,7 +27,7 @@
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
     width: 400px;
-    height: 500px;
+    height: 540px;
     background-color: #7539e43b;
     display: flex;
     flex-direction: column;
@@ -84,9 +84,9 @@
     .comment-box {
       border-radius: 0.5rem;
       padding: 0.5rem;
-      height: 25%;
+      height: 27.5%;
       width: 100%;
-      background-color: #ac4ec684;
+      background-color: #e9afcc;
       color: #5727b1;
 
       > div:nth-child(1) {
@@ -133,18 +133,14 @@
             transition: filter 0.125s ease-in-out;
 
             &:hover {
-              filter: invert(82%) sepia(35%) saturate(208%) hue-rotate(290deg)
-                brightness(99%) contrast(108%);
+              filter: invert(19%) sepia(32%) saturate(5552%) hue-rotate(320deg)
+                brightness(94%) contrast(93%);
             }
           }
         }
       }
     }
   }
-}
-
-.comment-bg {
-  background-color: #e8b7e0 !important;
 }
 
 @media screen and (max-width: 850px) {
@@ -176,7 +172,7 @@
       border-top-right-radius: 0;
       border-bottom-left-radius: 1rem;
       width: 400px;
-      height: 500px;
+      height: 480px;
       flex-direction: column;
     }
   }

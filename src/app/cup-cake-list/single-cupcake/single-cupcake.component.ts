@@ -1,9 +1,10 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-single-cupcake',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './single-cupcake.component.html',
   styleUrl: './single-cupcake.component.scss',
 })
@@ -29,9 +30,11 @@ export class SingleCupcakeComponent {
     ],
   };
 
+  inputData = '';
+
   @Output() cupcakeName = new EventEmitter<string>();
 
-  emitCupcakeName() {
-    this.cupcakeName.emit(this.cupcake.name);
+  sendInputData() {
+    this.cupcakeName.emit(this.inputData);
   }
 }
